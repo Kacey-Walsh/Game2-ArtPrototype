@@ -74,6 +74,11 @@ public class PlayerMovement : MonoBehaviour
         if(grounded)
         rb.drag = groundDrag;
         else rb.drag = 0;
+
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     private void MyInput()
